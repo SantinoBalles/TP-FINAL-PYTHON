@@ -9,3 +9,6 @@ def alta_curso(request, nombre):
     curso.save()
     texto = f"Se guardo en la BD del curso: {curso.nombre} {curso.camada}" 
     return HttpResponse(texto)
+
+def inicio(request):
+    return render( request, "padre.html")
